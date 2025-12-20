@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중학 수학 교과서 - 2022 개정</title>
+    <link href="https://cdn.jsdelivr.net/gh/fonts-archive/DaeguBuseongro/DaeguBuseongro.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Daegu Buseongro', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .publisher {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .grade-section {
+            display: flex;
+            margin-bottom: 40px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .grade-label {
+            width: 25%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            padding: 30px;
+            border-right: 2px solid #e0e0e0;
+        }
+
+        .materials {
+            width: 75%;
+            display: flex;
+        }
+
+        .material-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .material-column:first-child {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .material-title {
+            font-size: 1.3em;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .file-list {
+            list-style: none;
+        }
+
+        .file-list li {
+            margin-bottom: 10px;
+        }
+
+        .file-list a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 5px;
+            transition: all 0.2s ease;
+        }
+
+        .file-list a:hover {
+            background: #f0f0f0;
+            color: #667eea;
+            transform: translateX(5px);
+        }
+
+        .preparing {
+            color: #999;
+            font-style: italic;
+            padding: 8px 12px;
+        }
+
+        @media (max-width: 968px) {
+            .grade-section {
+                flex-direction: column;
+            }
+
+            .grade-label {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #e0e0e0;
+                padding: 20px;
+            }
+
+            .materials {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .material-column:first-child {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .publisher {
+                font-size: 1.5em;
+            }
+
+            .grade-label {
+                font-size: 1.3em;
+            }
+
+            .material-title {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="back-btn">← 돌아가기</a>
+        <h1>중학</h1>
+    </div>
+
+    <div class="container">
+        <div class="publisher">두산동아</div>
+
+        <!-- 1학년 -->
+        <div class="grade-section">
+            <div class="grade-label">1학년</div>
+            <div class="materials">
+                <div class="material-column">
+                    <div class="material-title">교과서</div>
+                    <ul class="file-list">
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_1단원.pdf" target="_blank">1단원</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_2단원.pdf" target="_blank">2단원</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_3단원.pdf" target="_blank">3단원</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_4단원.pdf" target="_blank">4단원</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_5단원_1.pdf" target="_blank">5단원 (1)</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_5단원_2.pdf" target="_blank">5단원 (2)</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_6단원.pdf" target="_blank">6단원</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_7단원.pdf" target="_blank">7단원</a></li>
+                        <li><a href="중등/두산동아/1학년/교과서/22개정_중학_수학1_교과서_8단원.pdf" target="_blank">8단원</a></li>
+                    </ul>
+                </div>
+                <div class="material-column">
+                    <div class="material-title">지도서</div>
+                    <ul class="file-list">
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_1단원.pdf" target="_blank">1단원</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_2단원.pdf" target="_blank">2단원</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_3단원.pdf" target="_blank">3단원</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_4단원.pdf" target="_blank">4단원</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_5단원_1.pdf" target="_blank">5단원 (1)</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_5단원_2.pdf" target="_blank">5단원 (2)</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_6단원.pdf" target="_blank">6단원</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_7단원.pdf" target="_blank">7단원</a></li>
+                        <li><a href="중등/두산동아/1학년/지도서/22개정_중학_수학1_지도서_8단원.pdf" target="_blank">8단원</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2학년 -->
+        <div class="grade-section">
+            <div class="grade-label">2학년</div>
+            <div class="materials">
+                <div class="material-column">
+                    <div class="material-title">교과서</div>
+                    <div class="preparing">준비 중...</div>
+                </div>
+                <div class="material-column">
+                    <div class="material-title">지도서</div>
+                    <div class="preparing">준비 중...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
